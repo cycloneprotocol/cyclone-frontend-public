@@ -1,0 +1,17 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M25.6826 20.0005C25.6826 23.3062 23.0433 25.9756 19.7749 25.9756C16.5065 25.9756 13.8672 23.3062 13.8672 20.0005C13.8672 16.6948 16.5065 14.0254 19.7749 14.0254"
+    stroke="#38DCD5" strokeWidth="3" stroke-miterlimit="10" />
+  <path
+    d="M19.7744 8.00781C26.3248 8.00781 31.6308 13.3743 31.6308 19.9995C31.6308 26.6247 26.3248 31.9912 19.7744 31.9912C13.224 31.9912 7.91797 26.6247 7.91797 19.9995"
+    stroke="#38DCD5" strokeWidth="3" stroke-miterlimit="10" stroke-linecap="square" />
+  <path
+    d="M19.7724 8.0498C26.2955 8.0498 31.5878 13.4025 31.5878 20C31.5878 26.5975 26.2955 31.9502 19.7724 31.9502C13.2493 31.9502 7.95703 26.5975 7.95703 20"
+    stroke="#38DCD5" strokeWidth="3" stroke-miterlimit="10" stroke-linecap="square" />
+  <path d="M37.4965 20C37.4965 29.9032 29.5649 37.9253 19.7734 37.9253" stroke="#38DCD5" strokeWidth="3"
+    stroke-miterlimit="10" stroke-linecap="square" />
+  <path d="M2.05078 19.9995C2.05078 10.0963 9.9824 2.07422 19.7739 2.07422" stroke="#38DCD5" strokeWidth="3"
+    stroke-miterlimit="10" stroke-linecap="square" />
+  <path d="M19.7734 2.07422H37.4965" stroke="#38DCD5" strokeWidth="3" stroke-miterlimit="10" />
+  <path d="M19.7739 37.9258H2.05078" stroke="#38DCD5" strokeWidth="3" stroke-miterlimit="10" />
+</svg>

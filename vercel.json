@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/images/:match*",
+      "destination": "https://static.cyclone.xyz/images/:match*",
+      "permanent": false
+    },
+    {
+      "source": "/circuits/:match*",
+      "destination": "https://static.cyclone.xyz/circuits/:match*",
+      "permanent": false
+    }
+  ]
+}

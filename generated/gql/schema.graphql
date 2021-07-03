@@ -1,0 +1,90 @@
+type Action {
+  id: Int!
+  address: String!
+  hash: String!
+  method: String!
+  time: Int64!
+}
+
+type ActionConnection {
+  actions: [Action]!
+  totalCount: Int64!
+}
+
+type Deposit {
+  id: Int!
+  contract: String!
+  address: String!
+  hash: String!
+  commitment: String!
+  leafIndex: Int!
+  timestamp: Int64!
+  denomination: String!
+}
+
+input Deposit_filter {
+  contract: String
+  address: String
+}
+
+enum Deposit_orderBy {
+  id
+  denomination
+  hash
+}
+
+type DepositConnection {
+  deposits: [Deposit]!
+  totalCount: Int64!
+}
+
+scalar Int64
+
+enum OrderDirection {
+  asc
+  desc
+}
+
+input Pagination {
+  skip: Int!
+  first: Int!
+}
+
+type Price {
+  usd: Float!
+}
+
+type Query {
+  actions(pagination: Pagination!): ActionConnection!
+  airdropScore(address: String!): Int!
+  luckyDrawTopN(poolAddress: String!, n: Int!): [Action]!
+  price: Price!
+  total: Total!
+  tokensInPoolPerDay(count: Int!): [TokenInPool]!
+  totalPoolPerDay(count: Int!): [TimeValue]!
+  cycTokensPerDay(count: Int!): [TimeValue]!
+  totalTxVolumePerDay(count: Int!): [TimeValue]!
+  deposits(
+    first: Int
+    skip: Int
+    where: Deposit_filter
+    sort: Deposit_orderBy
+    orderDirection: OrderDirection
+  ): DepositConnection!
+}
+
+type TimeValue {
+  timestamp: Int64!
+  value: String!
+}
+
+type TokenInPool {
+  name: String!
+  values: [TimeValue]!
+}
+
+type Total {
+  totalSupply: Float!
+  iotx: Float!
+  fee: Float!
+}

@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+@import '~antd/dist/antd.css';
+
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  overflow-x: hidden;
+}
+
+.ant-dropdown-trigger {
+  height: 100%;
+  font-size: 1rem;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.ant-dropdown-trigger:hover {
+  background-color: rgba(69, 188, 184, 0.35);
+  color: #38DCD5;
+}
+
+.ant-dropdown-menu {
+  background-color: #282c34 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.ant-dropdown-menu-item>a,
+.ant-dropdown-menu-submenu-title>a {
+  color: #fff !important;
+}
+
+.ant-dropdown-menu-item>a:hover,
+.ant-dropdown-menu-submenu-title>a:hover {
+  color: #38DCD5 !important;
+}
+
+.ant-dropdown-menu-item:hover,
+.ant-dropdown-menu-submenu-title:hover {
+  background-color: transparent !important;
+}
+
+@media (min-width: 992px) {
+  .ant-dropdown-menu {
+    flex-direction: row;
+  }
+}
+
+.textButton {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.button {
+  width: 253px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #45BCB8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.input {
+  border: 1px solid #45BCB8 !important;
+  color: white !important;
+  background: transparent !important;
+  height: 40px;
+  width: 100%;
+  appearance: none;
+  font-size: 0.875rem;
+  font-family: 'IBM Plex Mono', monospace;
+  padding-left: 0.5rem;
+}
+
+.ant-input {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input::-webkit-input-placeholder {
+  columns: #427b79;
+  font-size: 14px;
+}
+
+.input::-moz-placeholder {
+  columns: #427b79;
+  font-size: 14px;
+}
+
+.input:-ms-input-placeholder {
+  columns: #427b79;
+  font-size: 14px;
+}
+
+.input:-moz-placeholder {
+  columns: #427b79;
+  font-size: 14px;
+}
+
+.baseButton {
+  cursor: pointer;
+}
+
+.baseButton:hover {
+  font-weight: bold;
+}
+
+.buttonDisable {
+  width: 253px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #45BCB8;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: none;
+  margin: auto;
+}
+
+.modalView {
+  width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  padding: 0 5%;
+}
+
+.loadingBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.loadingLabel {
+  color: #38DCD5;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.stepperNode {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.stepperPointer {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #45bcb8;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepperPointerInside {
+  margin: 1px;
+  width: 18px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #45BCB8;
+}
+
+.highLightText {
+  font-size: 16px;
+  color: #45BCB8;
+  word-break: break-all;
+}
+
+
+.colorfulA {
+  color: #45BCB8;
+}
+
+.borderedView {
+  border: 1px solid #45BCB8;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.smallCheckNoteView {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 482px;
+}
+
+.checkNoteView {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1122px;
+}
+
+
+.titleOfView {
+  font-size: 24px;
+  color: #38DCD5;
+  font-weight: bold;
+  padding: 1.5rem;
+  padding-right: 2.5rem;
+  border-bottom: 1px solid #45BCB8;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.bodyOfView {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #45BCB8;
+  background-color: transparent;
+  border-radius: 0;
+  color: transparent;
+}
+
+.resultPanel {
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.table {
+  width: 100%;
+  display: table;
+}
+
+.th {
+  border-bottom: 1px solid #45BCB8;
+  display: table-row;
+}
+
+.tr {
+  display: table-row;
+  color: #45BCB8;
+  align-items: center;
+}
+
+.td {
+  padding: 11px;
+  font-size: 14px;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.imageButton {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.columnsTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* column-gap: 50px; */
+  flex-wrap: wrap;
+  max-height: 186px;
+  margin-right: 1rem;
+  overflow-y: scroll;
+  line-height: 1.5rem;
+}
+
+.noteData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.tooltip {
+  font-size: 8px;
+  padding: 2px;
+  background-color: #45BCB8;
+  border-radius: 2px;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.popup {
+  z-index: 1000000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-tooltip-arrow-content {
+  background-color: #3daaa6 !important;
+}
+
+.ant-tooltip-inner {
+  background-color: #3daaa6 !important;
+}
+
+.highcharts-credits {
+  display: none !important;
+}
